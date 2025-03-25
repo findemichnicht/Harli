@@ -53,8 +53,7 @@
  <footer>
     <p id = "result"></p>
     <script>
-      const datum = new Date(document.lastModified);
-      document.getElementById("result").innerHTML = "Zuletzt geändert: " + datum.toLocaleString();
-   </script> 
+      document.getElementById("result").innerHTML = "Zuletzt geändert: " + (new Date(document.lastModified)).toLocaleString(); 
+    </script> 
  </footer>
 </html>
