@@ -11,4 +11,11 @@
    <h2></h2>
 <p></p>
  </body>
+ <footer>
+    <p id = "result"></p>
+    <script>
+      const datum = new Date(document.lastModified);
+      document.getElementById("result").innerHTML = "Zuletzt geändert: " + datum.toLocaleString();
+   </script> 
+ </footer>
 </html>
