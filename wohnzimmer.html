@@ -24,4 +24,11 @@
   <h2>Radio</h2>
   <p>Das <a href="./manuals/Kathrein_DAB10.pdf">Radio</a> hat Batterien und kann mobil betrieben werden.</p>
  </body>
+ <footer>
+    <p id = "result"></p>
+    <script>
+      const datum = new Date(document.lastModified);
+      document.getElementById("result").innerHTML = "Zuletzt geändert: " + datum.toLocaleString();
+   </script> 
+ </footer>
 </html>
