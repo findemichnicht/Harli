@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="./stylesheet.css">
   <title>Draußen</title>
-  <div id = "result"></div>
-  <script>
-      var date = document.lastModified;
-      document.getElementById("result").innerHTML = "Zuletzt geändert: " + date;
-  </script>
   </head>
   <body>
    <h1>Draußen</h1>
@@ -36,4 +31,11 @@
   Außerdem liegt dort eine runde Metallplatte zum Unterlegen.<br>
   Das Holz unter dem Haus ist durchgetroknet und kann dafür verwendet werden.</p>
  </body>
+ <footer>
+    <p id = "result"></p>
+    <script>
+      const datum = new Date(document.lastModified);
+      document.getElementById("result").innerHTML = "Zuletzt geändert: " + datum.toLocaleString();
+   </script> 
+ </footer>
 </html>
