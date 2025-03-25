@@ -50,4 +50,11 @@
   <li><a href="https://www.gartenraeume.eu">Offene Gärten</a>: Zweimal im Jahr zeigen sich liebevoll angelegte Gärten der Öffentlichkeit. Häufig gibt es Kaffee und Kuchen.</li>
 </ul>
  </body>
+ <footer>
+    <p id = "result"></p>
+    <script>
+      const datum = new Date(document.lastModified);
+      document.getElementById("result").innerHTML = "Zuletzt geändert: " + datum.toLocaleString();
+   </script> 
+ </footer>
 </html>
